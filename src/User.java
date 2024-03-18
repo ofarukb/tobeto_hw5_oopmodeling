@@ -15,6 +15,7 @@ public class User {
 
 	public User(String firstName, String lastName, Date birthDate, List<Review> reviews) {
 		super();
+		this.reviews=new ArrayList<Review>();
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.birthDate = birthDate;

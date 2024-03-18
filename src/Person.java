@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.List;
 
 public class Person extends User {
@@ -9,6 +10,9 @@ public class Person extends User {
 	private List<String> photos;
 
 	public Person() {
+		this.movieFilmography=new ArrayList<Movie>();
+		this.seriesFilmography=new ArrayList<Series>();
+		this.photos=new ArrayList<String>();
 	}
 
 	public String getBiography() {

@@ -1,8 +1,9 @@
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
 public class Media {
-	
+
 	private Date releaseDate;
 	private double rating;
 	private List<Director> directors;
@@ -15,6 +16,18 @@ public class Media {
 	private List<String> photos;
 	private List<String> videos;
 	private List<Review> reviews;
+
+	public Media() {
+		super();
+		this.directors = new ArrayList<Director>();
+		this.casts = new ArrayList<Star>();
+		this.writers = new ArrayList<Writer>();
+		this.genres = new ArrayList<Genre>();
+		this.languages = new ArrayList<String>();
+		this.photos = new ArrayList<String>();
+		this.videos = new ArrayList<String>();
+		this.reviews = new ArrayList<Review>();
+	}
 
 	public Date getReleaseDate() {
 		return releaseDate;
